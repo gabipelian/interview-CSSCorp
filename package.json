@@ -1,0 +1,16 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^9.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "openTests": "npx cypress open",
+    "headlessTests": "npx cypress run"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+{
+  "ignoreTestFiles": ["*.md", "*.json"],
+  "video": false,
+  "screenshotOnRunFailure": false,
+  "numTestsKeptInMemory": 0,
+  "chromeWebSecurity": false,
+  "experimentalSessionSupport": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "retries": 2,
+  "defaultCommandTimeout": 30000
+}
