@@ -5,6 +5,7 @@ import {account} from "../data/selectors/Account";
 import {commonUrls} from "../data/constants/CommonData";
 
 const LOGOUT_TEXT = "Logout";
+const INVALID_EMAIL_FORMAT_ERROR = "*email is not valid";
 
 export class LoginPage {
 
