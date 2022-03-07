@@ -10,6 +10,32 @@ export class CommonSteps {
         commonMethods.setOptanonConsentCookie();
         commonMethods.setCrossOriginUncaughtErrorFalse();
         commonMethods.setGlobalEWelcomeData();
+    };
+
+    insertCredentials(email, password) {
+        loginPage.typeEmail(email);
+        loginPage.typePassword(password);
+        loginPage.clickOutsideOfLoginFields();
+    }
+
+    assertErrors(password, email, fourCharsPass, invalidEmail, testAutomationEmail, testUserEmail, fiftyCharsEmail) {
+        if (password === fourCharsPass) {
+            loginPage.assert5CharsPasswordError();
+        } else if (email == testAutomationEmail) {
+            loginPage.clickOnSignInButton();
+            loginPage.assertIncorrectEmailOrPasswordError();
+        } else if (email == invalidEmail) {
+            loginPage.assertEmailErrorIsDisplayedProperly();
+        } else if (email == testUserEmail) {
+            loginPage.clickOnSignInButton();
+            loginPage.assertIncorrectEmailOrPasswordError();
+        } else if (email == testUserEmail) {
+            loginPage.clickOnSignInButton();
+            loginPage.assertIncorrectEmailOrPasswordError();
+        } else if (email == fiftyCharsEmail) {
+            loginPage.clickOnSignInButton();
+            loginPage.assertEmailErrorIsDisplayedProperly();
+        }
     }
 };
 

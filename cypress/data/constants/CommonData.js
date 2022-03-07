@@ -10,7 +10,12 @@ let cookies = {
 };
 
 let commonData = {
-    US: "US"
+    US: "US",
+    FOUR_CHARS_PASS:  'qwer',
+    INVALID_EMAIL:  'invalidEmail',
+    TEST_USER_EMAIL:  'testuser_0264@gmail.com',
+    FIFTY_CHARS_EMAIL: 'asd!@#123~12345678910123456789101234567891050CHARACTERS',
+    UNITED_STATES: "United States"
 };
 
 let commonUrls = {
